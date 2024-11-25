@@ -3,13 +3,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Latar belakang gradasi */
-    color: #fff; /* Warna teks putih */
+    background-color: #87CEFA; /* Biru muda */
+    color: #333; /* Warna teks gelap */
 }
 
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-img {
@@ -17,8 +23,11 @@ header {
     height: 100px; /* Atur tinggi gambar sesuai kebutuhan */
     border-radius: 50%; /* Membuat gambar menjadi bulat */
     object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-    float: left; /* Mengatur posisi gambar di sebelah kiri */
     margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.profile-info {
+    text-align: left;
 }
 
 nav ul {
@@ -31,35 +40,33 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff; /* Warna tautan putih */
-    text-decoration: none;
-}
-
 section {
     padding: 20px;
     margin: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+    background: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
     border-radius: 8px;
 }
 
 .project {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 10px 0;
 }
 
 .social-media {
     margin-top: 10px;
+    text-align: center; /* Rata tengah */
 }
 
 .social-media a {
-    color: #fff; /* Warna tautan putih */
-    margin-right: 15px;
+    color: #333; /* Warna ikon */
+    margin: 0 10px;
+    font-size: 24px; /* Ukuran ikon */
     text-decoration: none;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: rgba(0, 0, 0, 0.7
+    background: #ff6347; /* Merah */
+    color: #fff; /* War
