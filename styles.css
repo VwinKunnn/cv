@@ -16,6 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Mengatur agar gambar dan informasi ditampilkan secara vertikal di perangkat kecil */
 }
 
 .profile-img {
@@ -23,22 +24,17 @@ header {
     height: 100px; /* Atur tinggi gambar sesuai kebutuhan */
     border-radius: 50%; /* Membuat gambar menjadi bulat */
     object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-    float: left; /* Memastikan Gambar Berada ada di posisinya */
-    margin-right: 50px; /* Memberikan jarak antara gambar dan teks */
+    float: left; /* Memastikan Gambar ada di posisinya */
+    margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
 }
 
 .profile-info {
-    text-align: center;
+    text-align: center; /* Rata tengah untuk informasi profil */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
 }
 
 section {
@@ -70,4 +66,37 @@ footer {
     text-align: center;
     padding: 10px 0;
     background: #ff6347; /* Merah */
-    color: #fff; /* War
+    color: #fff; /* Warna teks putih */
+}
+
+/* Media Queries untuk tampilan responsif */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Mengatur agar gambar dan informasi ditampilkan secara vertikal */
+    }
+
+    .profile-img {
+        width: 80px; /* Ukuran gambar lebih kecil di perangkat kecil */
+        height: 80px; /* Ukuran gambar lebih kecil di perangkat kecil */
+    }
+
+    section {
+        margin: 10px; /* Mengurangi margin untuk tampilan lebih baik di perangkat kecil */
+    }
+
+    .social-media a {
+        font-size: 20px; /* Ukuran ikon lebih kecil di perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Mengubah menu menjadi kolom untuk perangkat kecil */
+        align-items: center; /* Rata tengah */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Mengurangi margin untuk tampilan lebih baik */
+    }
+}
