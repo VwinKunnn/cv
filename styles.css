@@ -14,8 +14,8 @@ header {
 
 .profile-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 }
 
 .profile-img {
@@ -27,7 +27,7 @@ header {
 }
 
 .profile-info {
-    text-align: left;
+    text-align: center;
 }
 
 nav ul {
