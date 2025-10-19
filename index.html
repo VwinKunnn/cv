@@ -3,51 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaky Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="profile-container">
-            <img src="images/nice_photo.jpg" class="profile-img">
-            <div class="profile-info">
-                <h1>Muhammad Zaky Zamzami</h1>
-                <p>Saya memiliki sifat pemberani, dapat diandalkan, memberikan pengaruh ke yang lain</p>
-            </div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portofolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
         </div>
-    </header>
-    
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Halo, Nama Saya Zaky</h1>
+            <p>Web Developer | Designer | Creative Thinker</p>
+            <a href="#contact" class="cta-button">Hubungi Saya</a>
+        </div>
+    </section>
+
     <section id="about">
         <h2>Tentang Saya</h2>
-        <p>perkenalkan saya Muhammad Zaky Zamzami Umur 17 Tahun Lahir Di Jakarta Sekarang duduk di bangku  Kelas 3 SMK. Membuatnya saya Website ini bertujuan Untuk memberikan ke Penjelasan Sedikit Tentang Saya, Bapak/Ibu Yang Terhormat demikian Cerita tentang Diri Saya Terima Kasih </p>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23667eea'/%3E%3Ctext x='150' y='150' font-size='100' text-anchor='middle' dy='.3em' fill='white'%3E👤%3C/text%3E%3C/svg%3E" alt="Profile">
+            </div>
+            <div class="about-text">
+                <p>Halo! Saya seorang web developer yang passionate dalam menciptakan pengalaman digital yang menarik dan fungsional. Dengan pengalaman di berbagai proyek, saya selalu berusaha memberikan solusi terbaik untuk setiap tantangan.</p>
+                <p>Saya percaya bahwa desain yang baik harus memadukan estetika dengan fungsionalitas. Setiap proyek adalah kesempatan untuk belajar dan berkembang.</p>
+                <p>Mari bekerja sama untuk mewujudkan ide Anda menjadi kenyataan!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Keahlian Saya</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Keluarga Adobe, Sketch</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first, Cross-browser</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>Performance</h3>
+                <p>Optimization, SEO, Speed</p>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Proyek Saya</h2>
-        <div class="project">
-            <h3>Judul Proyek 1</h3>
-            <p>Deskripsi singkat tentang proyek ini.</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <div class="project-info">
+                    <h3>Website E-Commerce</h3>
+                    <p>Platform belanja online modern dengan fitur lengkap dan user-friendly.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-info">
+                    <h3>Dashboard Analytics</h3>
+                    <p>Aplikasi dashboard untuk visualisasi data dengan tampilan interaktif.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎯</div>
+                <div class="project-info">
+                    <h3>Landing Page</h3>
+                    <p>Landing page kreatif untuk kampanye marketing dengan konversi tinggi.</p>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Judul Proyek 2</h3>
-            <p>Deskripsi singkat tentang proyek ini.</p>
-        </div>
-        <!-- Tambahkan lebih banyak proyek sesuai kebutuhan -->
     </section>
 
     <section id="contact">
-        <h2>Kontak Saya</h2>
-        <p>Email: <a href="mailto:email@example.com">zakychen558@gmail.com</a></p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/muhammad.zaky.zamzami.2024" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/AEllion-" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/zaqilyonx" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+        <h2>Hubungi Saya</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Muhammad Zaky Zamzami. Semua hak dilindungi.</p>
+        <p>&copy; 2025 Portofolio Saya. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="GitHub">🐙</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Email">📧</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
